@@ -1,21 +1,14 @@
 import { google } from "googleapis";
 import { readBody } from "h3";
-import path from "path";
-import fs from "fs";
+
 import { version } from "vue";
 
 export default defineEventHandler(async (event) => {
   const requestBody = await readBody(event);
   const email = requestBody.email;
 
-  const credentialsPath = path.resolve(
-    process.cwd(),
-    "server/credentials.json"
-  );
-
-  const credentials = JSON.parse(fs.readFileSync(credentialsPath, "utf8"));
-
-  const { client_email, private_key } = credentials;
+  const client_email = useRuntimeConfig().clientEmail;
+  const private_key = useRuntimeConfig().privateKey;
 
   const auth = new google.auth.JWT(client_email, undefined, private_key, [
     "https://www.googleapis.com/auth/spreadsheets",
