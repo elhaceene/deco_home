@@ -1,0 +1,40 @@
+@mixin heading1{
+    font-size: 61px;
+    line-height: 175%;
+}
+@mixin heading2{
+    font-size: 49px;
+    line-height: 120%;
+}
+@mixin heading3{
+    font-size: 39px;
+    line-height: 120%;
+}
+@mixin heading4{
+    font-size: 31px;
+    line-height: 120%;
+}
+@mixin heading5{
+    font-size: 25px;
+    line-height: 120%;
+}
+@mixin heading6{
+    font-size: 20px;
+    line-height: 120%;
+}
+@mixin text-lg{
+    font-size: 16px;
+    line-height: 120%;
+}
+@mixin text-base{
+    font-size: 14px;
+    line-height: 120%;
+}
+@mixin text-sm{
+    font-size: 12px;
+    line-height: 120%;
+}
+@mixin text-xsm{
+    font-size: 10px;
+    line-height: 120%;
+}

@@ -1,0 +1,299 @@
+@import "colors";
+@import "typography";
+@import "layouts";
+@import "reset";
+body {
+  font-family: "inter", -apple-system, "arial", "segon-UI", roboto;
+  color: black;
+  @include text-base;
+  background-color: white;
+  padding-top: 80px;
+  overflow-x: hidden;
+}
+.container {
+  width: 100%;
+  max-width: $desktop;
+  margin: 0 auto;
+
+  @media (max-width: $tablet) {
+    padding: 0 16px;
+  }
+}
+
+/*------------------links-----------------*/
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  border-radius: 6px;
+
+  @include text-lg;
+  font-weight: 500;
+
+  &.lg {
+    @include heading6;
+  }
+  &.base {
+    color: $neutral100;
+
+    &:hover {
+      color: $black;
+    }
+
+    &:focus {
+      box-shadow: 0px 0px 0px 2px #ebebeb;
+    }
+
+    .active,
+    &.router-link-active {
+      color: $black;
+    }
+  }
+
+  &.accent {
+    color: $accent300;
+
+    &:hover {
+      color: $accent400;
+    }
+
+    &:focus {
+      box-shadow: 0px 0px 0px 2px #e6effd;
+    }
+
+    .active,
+    &.router-link-active {
+      color: $accent300;
+    }
+  }
+}
+
+/*------------------buttons-----------------*/
+
+.btn-square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  border-radius: 6px;
+  color: $black;
+  position: relative;
+
+  &.sm {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+  &.md {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+  &.lg {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+  }
+  &:hover {
+    background-color: $neutral20;
+  }
+  &:focus {
+    background-color: $white;
+    box-shadow: 0px 0px 0px 2px #ebebeb;
+  }
+  .counter {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: $black;
+    color: white;
+    @include text-xsm;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.btn-filter {
+  height: 40px;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border: 1px solid $neutral40;
+  border-radius: 20px;
+  background-color: $white;
+
+  &:hover {
+    background-color: $neutral20;
+  }
+  &.active {
+    background-color: $black;
+    color: white;
+    border-color: $black;
+  }
+}
+/* ----------------
+--------------dropdown--------------*/
+
+.dropdown {
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid $neutral40;
+  box-shadow: 0px 4px 20px rgba($color: #000000, $alpha: 0.1);
+  display: flex;
+  flex-direction: column;
+
+  & > * {
+    &:first-child {
+      border-radius: 4px 4px 0 0;
+    }
+    &:last-child {
+      border-radius: 0 0 4px 4px;
+    }
+  }
+}
+
+.btn-dropdown {
+  width: 100%;
+  padding: 8px 12px;
+  color: $black;
+  font-weight: 500;
+  background-color: white;
+
+  &:hover {
+    background-color: $neutral20;
+  }
+  &:focus {
+    box-shadow: 0px 0px 0px 2px #ebebeb;
+  }
+
+  &.active {
+    background-color: $black;
+    color: white;
+  }
+}
+.btn-newsletter {
+  height: 40px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: $white;
+  color: black;
+  @include text-base;
+  font-weight: 600;
+  &:hover {
+    background-color: $neutral20;
+  }
+
+  &[disabled] {
+    opacity: 0.3;
+  }
+}
+.btn-primary {
+  height: 40px;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-weight: 500;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: $black;
+  color: white;
+  @include text-base;
+  font-weight: 600;
+
+  .icon {
+    font-size: 20px;
+  }
+
+  &:hover {
+    background-color: $neutral800;
+  }
+  &:focus {
+    background-color: black;
+    box-shadow: 0px 0px 0px 2px #e1e1e1;
+  }
+
+  &[disabled] {
+    opacity: 0.3;
+  }
+}
+
+/*------------------Tags-----------------*/
+
+.tag {
+  background-color: white;
+  color: black;
+  padding: 0 12px;
+  height: 24px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: 1px solid $neutral40;
+}
+
+/*------------------Input-----------------*/
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  label {
+    font-weight: 500;
+  }
+}
+
+.input-newsletter {
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid rgba($color: white, $alpha: 0.25);
+  background-color: rgba($color: white, $alpha: 0.1);
+  backdrop-filter: blur(20px);
+  padding: 0 16px;
+  color: white;
+
+  &::placeholder {
+    color: white;
+    opacity: 0.5;
+  }
+
+  @media (max-width: $tablet) {
+    @include text-lg;
+  }
+  @media (max-width: $phone) {
+    @include text-lg;
+  }
+}
+
+.input-primary {
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid $neutral40;
+  background-color: white;
+  padding: 0 16px;
+  color: black;
+
+  &::placeholder {
+    color: black;
+    opacity: 0.5;
+  }
+
+  @media (max-width: $tablet) {
+    @include text-lg;
+  }
+  @media (max-width: $phone) {
+    @include text-lg;
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "common": {
+    "home": "Accueil",
+    "faq": "FAQ",
+    "lang": "Langue",
+    "cart": "Panier",
+    "footerDescription": " Élégance minimaliste. Sélectionné pour vous. Style sans effort, qualité intemporelle.",
+    "company": "Entreprise",
+    "legal": "Légale",
+    "termsOfUse": "Conditions d'utilisation",
+    "privacyPolicy": "Politique de confidentialité",
+    "copyright": "Decohome,Tous droits réservés.",
+    "heroTitle": "Mobilier minimaliste : Où la qualité rencontre la simplicité.",
+    "heroSubtitle": "Découvrez l'élégance minimaliste avec la sélection de Decohome. Qualité et simplicité intemporelle redéfinissent votre espace.",
+    "slogan": "Explorez notre mobilier contemporain 🛋️ pour une vie moderne. Achetez facilement, ressentez la joie. 🪴",
+    "livingRoom": "Salon",
+    "kitchen": "Cuisine",
+    "bathRoom": "Salle de Bain",
+    "bedRoom": "Chambre a Coucher",
+    "desk": "Bureau",
+    "gallery": "Gallerie",
+    "ourProducts": "Nos Produits",
+    "chair": "Chaise",
+    "table": "Table",
+    "couch": "Canapé",
+    "lamp": "Lampe",
+    "bed": "Lit",
+    "reduction": "Réduction",
+    "feedbacks": "Commentaires",
+    "newsLetterTitle": "Ne manquez rien, abonnez-vous à notre newsletter.",
+    "newsLetterSubtitle": "Simplifiez votre espace, sublimez votre style.",
+    "subscribe": "S’abonner",
+    "email": "Votre{'@'}email.com",
+    "FAQ": {
+      "question1": {
+        "question": "Quels sont vos modes de paiement acceptés ?",
+        "answer": "Nous acceptons les paiements par carte de crédit (Visa, MasterCard, American Express), PayPal et virement bancaire."
+      },
+      "question2": {
+        "question": "Proposez-vous la livraison internationale ?",
+        "answer": "Oui, nous offrons la livraison internationale dans de nombreux pays. Les frais d'expédition varient en fonction de la destination et du poids de l'article. Vous pouvez vérifier la disponibilité dans votre pays lors du processus de commande."
+      },
+      "question3": {
+        "question": "Quelle est votre politique de retour ?",
+        "answer": "Nous offrons une politique de retour de 30 jours. Si vous n'êtes pas entièrement satisfait de votre achat, vous pouvez nous le retourner dans son état d'origine pour un remboursement ou un échange. Veuillez consulter notre page de politique de retour pour plus de détails."
+      },
+      "question4": {
+        "question": "Comment puis-je suivre ma commande ?",
+        "answer": "Une fois votre commande expédiée, vous recevrez un e-mail de confirmation contenant un numéro de suivi. Vous pouvez utiliser ce numéro pour suivre l'expédition de votre commande sur le site du transporteur."
+      },
+      "question5": {
+        "question": "Offrez-vous des services de montage pour les meubles ?",
+        "answer": "Oui, nous proposons des services de montage pour la plupart de nos meubles. Vous pouvez sélectionner cette option lors du processus de commande et notre équipe de montage professionnelle se chargera de tout assembler chez vous. Des frais supplémentaires peuvent s'appliquer en fonction de la complexité du montage."
+      }
+    },
+
+    "faqtitle": "Foire Aux Questions",
+    "faqsubtitle": "Tout ce que vous devez savoir sur Dechome.",
+    "addToCart": "Ajouter au Panier",
+    "cartUpdated": "Panier mis à jour",
+    "productedAddedToCart": "Produit ajouté au panier.",
+    "product": "Produit",
+    "quantity": "Quantité",
+    "price": "Prix",
+    "total": "Total",
+    "checkout": "Checkout",
+    "delete": "Supprimer",
+    "yourCartIsEmpty": "Votre panier est vide",
+    "yourOrder": "Votre commande",
+    "yourInformations": "Vos informations",
+    "fullName": "Nom complet",
+    "phone": "Numéro de télephone",
+    "phonePlaceHolder": "Saisir votre numéro de télephone",
+    "city": "Ville",
+    "cityPlaceHolder": "Sélectionné votre ville",
+    "address": "Adresse",
+    "adressPlaceHolder": "Saisir votre adresse",
+    "order": "Commander",
+    "Welcome": "Bienvenu",
+    "emailAddedSuccessFully": "Votre email a été ajouté avec succés.",
+    "error": "Erreur",
+    "tryAgain": "Veuiller réessayer dans un moment.",
+    "orderReceived": "Commande reçue",
+    "orderReceivedSubtitle": "Votre commande a bien été reçue et nous vous contacterons sous peu pour la confirmer.",
+    "orderReceivedToast": "Nous avons bien reçu votre commande"
+  }
+}
